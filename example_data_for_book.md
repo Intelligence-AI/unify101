@@ -241,7 +241,7 @@ The Concept Library serves as a centralized repository that standardizes definit
   - **Structure**: 
     - The schema for this concept can be viewed at intelligence.ai/schema/marketing/CAC
     - The JSON Schema example for this data object is:
-       ```
+```
        // Example JSON Schema for a CAC object
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
@@ -282,7 +282,7 @@ The Concept Library serves as a centralized repository that standardizes definit
   },
   "required": ["CAC"]
 }
-  ```
+```
       
 #### 2. Customer Lifetime Value (CLV)
   - **Context**: 
@@ -295,7 +295,7 @@ The Concept Library serves as a centralized repository that standardizes definit
   - **Structure**: 
     - The schema for this concept can be viewed at intelligence.ai/schema/customer/CLV
     - The JSON Schema example for this data object is:
-       ```json
+```json
        // Example JSON Schema for a CLV object
        {
            "$schema": "http://json-schema.org/draft-07/schema#",
@@ -316,7 +316,7 @@ The Concept Library serves as a centralized repository that standardizes definit
            },
            "required": ["CLV"]
        }
-       ```
+```
 
 #### 3. Conversion Rate
   - **Context**: 
