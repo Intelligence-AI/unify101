@@ -1,0 +1,14 @@
+{
+  "$id": "https://schemas.unify101.com/common/ipv4/v2.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IPv4 address",
+  "$comment": "https://datatracker.ietf.org/doc/html/rfc791",
+  "description": "As defined in IETF RFC 791",
+  "format": "ipv4",
+  "type": "string",
+  "pattern": "^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$",
+  "examples": [
+    "192.168.0.1",
+    "172.16.0.254"
+  ]
+}
