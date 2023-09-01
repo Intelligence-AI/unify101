@@ -1,0 +1,11 @@
+{
+  "$id": "https://schemas.unify101.com/intelligence-ai/website-milestone/v2.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Website milestone in the Intelligence.AI sign-up form completion journey",
+  "description": "A ficticious milestone from Chapter 11 and 12 in our book",
+  "examples": [ "set_contact_info", "invite_friends" ],
+  "enum": [
+    "visit_landing_page", "set_contact_info", "set_billing_info",
+    "agree_to_terms", "sign_up", "invite_friends"
+  ]
+}
