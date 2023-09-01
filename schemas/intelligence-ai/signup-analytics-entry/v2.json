@@ -1,0 +1,44 @@
+{
+  "$id": "https://schemas.unify101.com/intelligence-ai/signup-analytics-entry/v2.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Analytics entry for the ficticious Intelligence.AI sign-up process",
+  "description": "Taken from Chapter 11 and 12 of our book",
+  "examples": [
+    {
+      "timestamp": "2023-08-30T13:30:16Z",
+      "ip": "182.28.182.59",
+      "email": "gator@gmail.com",
+      "state": "CA",
+      "milestone": "set_contact_info",
+      "const": { "amount": 0, "currency": "USD" }
+    }
+  ],
+  "type": "object",
+  "required": [ "timestamp", "ip", "state", "milestone", "cost" ],
+  "properties": {
+    "timestamp": { 
+      "title": "The time of the entry event",
+      "$ref": "https://schemas.unify101.com/common/timestamp/v2.json" 
+    },
+    "ip": { 
+      "title": "The IP address of the user",
+      "$ref": "https://schemas.unify101.com/common/ipv4/v2.json" 
+    },
+    "email": { 
+      "title": "The email address of the user, if known",
+      "$ref": "https://schemas.unify101.com/common/email/v2.json" 
+    },
+    "state": { 
+      "title": "The US state where the user is connecting from",
+      "$ref": "https://schemas.unify101.com/common/us-state/v2.json" 
+    },
+    "milestone": { 
+      "title": "The sign-up milestone the user completed",
+      "$ref": "https://schemas.unify101.com/intelligence-ai/website-milestone/v2.json" 
+    },
+    "cost": { 
+      "title": "The cost of acquiring the user for completing this milestone",
+      "$ref": "https://schemas.unify101.com/common/price/v2.json" 
+    }
+  }
+}
