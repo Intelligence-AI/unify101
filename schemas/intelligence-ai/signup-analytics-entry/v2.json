@@ -1,7 +1,7 @@
 {
   "$id": "https://schemas.unify101.com/intelligence-ai/signup-analytics-entry/v2.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Analytics entry for the ficticious Intelligence.AI sign-up process",
+  "title": "Analytics entry for the fictitious Intelligence.AI sign-up process",
   "description": "Taken from Chapter 11 and 12 of our book",
   "examples": [
     {
