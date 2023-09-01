@@ -1,0 +1,8 @@
+{
+  "$id": "https://schemas.unify101.com/intelligence-ai/signup-analytics/v1.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "$ref": "https://schemas.unify101.com/intelligence-ai/signup-analytics-entry/v1.json"
+  }
+}
