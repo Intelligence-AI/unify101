@@ -1,0 +1,13 @@
+{
+  "$id": "https://schemas.unify101.com/common/timestamp/v2.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ISO 8106 timestamp in Basic Format",
+  "description": "The go-to date and time format at Unify101",
+  "format": "date-time",
+  "type": "string",
+  "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$",
+  "examples": [
+    "2023-08-21T13:24:49Z",
+    "2023-08-21T13:26:33Z"
+  ]
+}
