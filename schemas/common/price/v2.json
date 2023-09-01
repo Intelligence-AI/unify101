@@ -1,0 +1,23 @@
+{
+  "$id": "https://schemas.unify101.com/common/price/v2.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Monetary price quantity",
+  "description": "The go-to price type at Unify101",
+  "examples": [
+    { "amount": 99.9, "currency": "EUR" },
+    { "amount": 15, "currency": "USD" }
+  ],
+  "type": "object",
+  "required": [ "amount", "currency" ],
+  "properties": {
+    "amount": { 
+      "title": "The price amount",
+      "type": "number",
+      "minimum": 0 
+    },
+    "currency": {
+      "title": "The price currency",
+      "$ref": "https://schemas.unify101.com/common/currency/v2.json" 
+    }
+  }
+}
