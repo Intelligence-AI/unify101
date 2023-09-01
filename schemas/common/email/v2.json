@@ -1,14 +1,14 @@
 {
   "$id": "https://schemas.unify101.com/common/email/v2.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Email address",
   "$comment": "https://www.rfc-editor.org/rfc/rfc5322",
+  "title": "Email address",
   "description": "As defined by IETF RFC 5322 ",
   "format": "email",
-  "type": "string",
-  "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
   "examples": [
     "user@example.com",
     "john.doe123@subdomain.domain.com"
-  ]
+  ],
+  "type": "string",
+  "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
 }

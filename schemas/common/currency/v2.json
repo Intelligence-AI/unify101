@@ -1,9 +1,10 @@
 {
   "$id": "https://schemas.unify101.com/common/currency/v2.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Currency 3-letter code",
   "$comment": "https://www.iso.org/iso-4217-currency-codes.html",
+  "title": "Currency 3-letter code",
   "description": "As defined by ISO 4217",
+  "examples": [ "USD", "GBP", "EUR" ],
   "enum": [
     "AED", "AFN", "ALL", "AMD", "ANG", "AOA", "ARS", "AUD", "AWG", "AZN",
     "BAM", "BBD", "BDT", "BGN", "BHD", "BIF", "BMD", "BND", "BOB", "BOV",
@@ -23,6 +24,5 @@
     "UYI", "UYU", "UYW", "UZS", "VES", "VND", "VUV", "WST", "XAF", "XAG",
     "XAU", "XBA", "XBB", "XBC", "XBD", "XCD", "XDR", "XOF", "XPD", "XPF",
     "XPT", "XSU", "XTS", "XUA", "XXX", "YER", "ZAR", "ZMW", "ZWL"
-  ],
-  "examples": [ "USD", "GBP", "EUR" ]
+  ]
 }
