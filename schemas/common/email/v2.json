@@ -3,7 +3,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$comment": "https://www.rfc-editor.org/rfc/rfc5322",
   "title": "Email address",
-  "description": "As defined by IETF RFC 5322 ",
+  "description": "As defined by IETF RFC 5322",
   "format": "email",
   "examples": [
     "user@example.com",
