@@ -1,7 +1,8 @@
 {
   "$id": "https://schemas.unify101.com/common/timestamp/v2.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "ISO 8106 timestamp in Basic Format",
+  "title": "ISO 8601 timestamp in Basic Format",
+  "$comment": "https://www.iso.org/iso-8601-date-and-time-format.html",
   "description": "The go-to date and time format at Unify101",
   "format": "date-time",
   "type": "string",
