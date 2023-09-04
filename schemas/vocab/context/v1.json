@@ -30,7 +30,7 @@
     },
     "license": {
       "title": "This keyword is set to a string that denotes a valid SPDX license identifier",
-      "$ref": "https://schemas.sourcemeta.com/spdx/license/v1.json"
+      "$ref": "https://schemas.unify101.com/common/license/v1.json"
     }
   }
 }
