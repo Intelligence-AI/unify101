@@ -17,15 +17,16 @@
     },
     "authors": {
       "title": "This keyword is set to an non-empty array of strings that determine the authors of the given schema",
-      "description": "The format of each author string SHOULD follow the following format 'name <email>'",
+      "description": "The format of each author string MUST follow the following format 'name <email>'",
       "type": "array",
       "minItems": 1,
       "items": {
+        "$comment": "TODO: Validate the structure of these strings with a pattern",
         "type": "string"
       },
       "examples": [
-        [ "John Doe <johndoe@example.com" ],
-        [ "John Doe <johndoe@example.com", "Jane Doe <johndoe@example.com" ]
+        [ "John Doe <johndoe@example.com>" ],
+        [ "John Doe <johndoe@example.com>", "Jane Doe <janedoe@example.com>" ]
       ]
     },
     "license": {

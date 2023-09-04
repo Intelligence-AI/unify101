@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Unify101 Context Vocabulary</title>
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+</head>
+<body>
+  <header>
+    <h1>The Unify101 Context Vocabulary (v1)</h1>
+    <p>A vocabulary for working with the <code>context</code> facet of data products</p>
+  </header>
+  <main>
+    <p>The URI of this vocabulary, which targets JSON Schema 2020-12, is:</p>
+    <pre class="highlight"><code>https://schemas.unify101.com/vocab/context/v1</code></pre>
+    <p>This vocabulary declares the following keywords:</p>
+    <h3><code>documentation</code></h3>
+    <p>This keyword is set to a URI reference that points to human-readable documentation for the given schema. For example:</p>
+    <pre class="highlight"><code>{ "documentation": "https://example.com/my-schema-documentation" }</code></pre>
+    <p>The value of this keyword <i>MUST</i> be collected as an annotation.</p>
+    <h3><code>authors</code></h3>
+    <p>This keyword is set to an non-empty array of strings that determine the authors of the given schema. The format of each author string <i>MUST</i> follow the following format <code>name &lt;email&gt;</code> For example:</p>
+    <pre class="highlight"><code>{ "authors": [ "John Doe &lt;johndoe@example.com&gt;" ] }</code></pre>
+    <pre class="highlight"><code>{ "authors": [ "John Doe &lt;johndoe@example.com&gt;", "Jane Doe &lt;janedoe@example.com&gt;" ] }</code></pre>
+    <p>The value of this keyword <i>MUST</i> be collected as an annotation.</p>
+    <h3><code>license</code></h3>
+    <p>This keyword is set to a string that denotes a valid SPDX license identifier. For example:</p>
+    <pre class="highlight"><code>{ "license": "MIT" }</code></pre>
+    <pre class="highlight"><code>{ "license": "Apache-2.0" }</code></pre>
+    <p>The value of this keyword <i>MUST</i> be collected as an annotation.</p>
+  </main>
+</body>
+</html>
