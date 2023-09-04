@@ -1,0 +1,36 @@
+{
+  "$id": "https://schemas.unify101.com/vocab/context/v1.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$dynamicAnchor": "meta",
+  "$vocabulary": {
+    "https://schemas.unify101.com/vocab/context/v1": true
+  },
+  "title": "A JSON Schema vocabulary for working with the 'context' facet of data products",
+  "description": "Taken from Chapter 13 of our book",
+  "type": [ "boolean", "object" ],
+  "properties": {
+    "documentation": {
+      "title": "This keyword is set to a URI reference that points to human-readable documentation for the given schema",
+      "type": "string",
+      "format": "uri-reference",
+      "examples": [ "https://example.com/my-schema-documentation" ]
+    },
+    "authors": {
+      "title": "This keyword is set to an non-empty array of strings that determine the authors of the given schema",
+      "description": "The format of each author string SHOULD follow the following format 'name <email>'",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      },
+      "examples": [
+        [ "John Doe <johndoe@example.com" ],
+        [ "John Doe <johndoe@example.com", "Jane Doe <johndoe@example.com" ]
+      ]
+    },
+    "license": {
+      "title": "This keyword is set to a string that denotes a valid SPDX license identifier",
+      "$ref": "https://schemas.sourcemeta.com/spdx/license/v1.json"
+    }
+  }
+}
