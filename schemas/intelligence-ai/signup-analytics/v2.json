@@ -1,0 +1,11 @@
+{
+  "$id": "https://schemas.unify101.com/intelligence-ai/signup-analytics/v2.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "A dataset snapshot of signup analytics by milestone on August 2023",
+  "description": "Taken from Chapter 12 of our book",
+  "readOnly": true,
+  "type": "array",
+  "items": {
+    "$ref": "https://schemas.unify101.com/intelligence-ai/signup-analytics-entry/v2.json"
+  }
+}
