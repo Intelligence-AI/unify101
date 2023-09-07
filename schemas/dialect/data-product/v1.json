@@ -1,0 +1,20 @@
+{
+  "$id": "https://schemas.unify101.com/dialect/data-product/v1.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$dynamicAnchor": "meta",
+  "$vocabulary": {
+    "https://json-schema.org/draft/2020-12/vocab/core": true,
+    "https://json-schema.org/draft/2020-12/vocab/applicator": true,
+    "https://json-schema.org/draft/2020-12/vocab/unevaluated": true,
+    "https://json-schema.org/draft/2020-12/vocab/validation": true,
+    "https://json-schema.org/draft/2020-12/vocab/meta-data": true,
+    "https://json-schema.org/draft/2020-12/vocab/format-annotation": true,
+    "https://json-schema.org/draft/2020-12/vocab/content": true,
+    "https://schemas.unify101.com/vocab/context/v1": true
+  },
+  "title": "A dialect based on 2020-12 for defining Data Products",
+  "allOf": [
+    { "$ref": "https://json-schema.org/draft/2020-12/schema" },
+    { "$ref": "https://schemas.unify101.com/vocab/context/v1.json" }
+  ]
+}
