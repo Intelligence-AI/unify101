@@ -1,0 +1,14 @@
+{
+  "$id": "https://schemas.unify101.com/intelligence-ai/signup-analytics/v3.json",
+  "$schema": "https://schemas.unify101.com/dialect/data-product/v1.json",
+  "title": "A dataset snapshot of signup analytics by milestone on August 2023",
+  "description": "Taken from Chapter 13 of our book",
+  "documentation": "https://learning.oreilly.com/library/view/unifying-business-data/9781098144999/",
+  "authors": [ "Juan Cruz Viotti <juan@example.com>", "Ron Itelman <ron@example.com" ],
+  "license": "AGPL-3.0",
+  "readOnly": true,
+  "type": "array",
+  "items": {
+    "$ref": "https://schemas.unify101.com/intelligence-ai/signup-analytics-entry/v2.json"
+  }
+}
