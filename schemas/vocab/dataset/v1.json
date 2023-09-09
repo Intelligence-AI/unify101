@@ -1,0 +1,34 @@
+{
+  "$id": "https://schemas.unify101.com/vocab/dataset/v1.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$dynamicAnchor": "meta",
+  "$vocabulary": {
+    "https://schemas.unify101.com/vocab/dataset/v1": true
+  },
+  "title": "A vocabulary for defining datasets using JSON and JSON Schema",
+  "description": "Taken from Chapter 14 of our book",
+  "type": [ "boolean", "object" ],
+  "properties": {
+    "dataset": {
+      "title": "This keyword is set to a JSON array that represents the entries of a dataset",
+      "type": "array",
+      "examples": [
+        [ 1, 2, 3 ],
+        [
+          { "data": 1 },
+          { "data": 2 },
+          { "data": 3 }
+        ]
+      ]
+    },
+    "datasetRef": {
+      "title": "This keyword is set to a URI reference that points to the dataset in JSON format",
+      "type": "string", 
+      "format": "uri-reference",
+      "examples": [ "https://example.com/my-dataset.json" ]
+    }
+  },
+  "not": {
+    "required": [ "dataset", "datasetRef" ]
+  }
+}
